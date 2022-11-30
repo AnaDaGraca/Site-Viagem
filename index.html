@@ -9,33 +9,41 @@
     <title>Good Voyage</title>
 </head>
 <body>
-    <header class="container-fluid p-2 bg-info text-center">
+    <header class="container-fluid p-2 bg-info text-center" id="header">
         <nav class="navbar navbar-expand-lg bg-info">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#index.html">Good Voyage</a>
+              <i class="bi bi-stack"></i>
+              <a class="navbar-brand text-uppercase text-dark" href="#header">Good Voyage</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse justify-content-end bg-info" id="navbarSupportedContent">
                 <ul class="navbar-nav">
                   <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#pacotes">Pacotes</a>
+                    <a class="nav-link text-uppercase text-dark" href="#pacotes">Pacotes</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#taxas" >Taxas</a>
+                    <a class="nav-link text-uppercase text-dark" href="#taxas" >Taxas</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#contato">
+                    <a class="nav-link text-uppercase text-dark" href="#contato">
                       Contato
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="checkout.html"><i class="bi bi-cart3"></i></a>
+                    <a class="nav-link text-uppercase text-dark"  href="#quem-somos">Quem somos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-uppercase text-dark" href="#nosso-time">Nosso time</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-uppercase text-dark" href="checkout.html"><i class="bi bi-cart3"></i></a>
                   </li>
                 </ul>
               </div>
             </div>
           </nav>
+          
           <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" 
@@ -271,7 +279,7 @@
     <h2 class="text-center">Taxas e serviços</h2>
 
     <table class="table table-warning table-striped table-hover table-bordered border-secondary">
-        <caption class="text-center">Descrição dos serviços e respectivos valores.</caption>
+        <caption class="text-center text-primary fst-italic text-uppercase">Descrição dos serviços e respectivos valores.</caption>
         <thead class="table-secondary">
             <tr>
                 <th>Serviços</th>
@@ -356,14 +364,216 @@
                     Aluguel de Veículos
                 </label>
             </div>
-            
         </fieldset><br>
         <button type="submit" class="btn btn-secondary">Salvar</button>
     </form>
 </section><br>
-<footer class="container-fluid bg-info text-center p-2">
-    <p>Desenvolvido por Ana Da Graça</p>
+<section id="quem-somos" class="container-fluid bg-warning text-center p-4">
+  <div class="container">
+      <div class="row gy-lg-5 align-items-center">
+          <div class="col-lg-6 order-lg-1 text-center text-lg-start">
+              <div class="title pt-3 pb-5">
+                  <h2 class="position-relative d-inline-block ms-4">Quem Somos</h2>
+              </div>
+              <p class="lead fst-italic text-primary text-uppercase fs-2">
+                  Novos caminhos, para novas jornadas em novas experiências!
+              </p>
+              <p class="text-light bg-dark fst-italic">
+                A agencia GOOD VOYAGE é uma empresa jovem com sistema dinâmico de trabalho pronto para agilizar e solucionar questões derivadas a viagens corporativas e turismo.
+                Mais do que uma agência de viagens, você precisa de especialistas para organizar, negociar e economizar em todos os itens relativos a viagens.
+                Estamos ao dispor para todo o tipo de informações, consultas, orçamentos, reservas e emissões de passagens aéreas nacionais e internacionais, hotéis em qualquer parte do mundo, aluguel de carros com e sem motorista e seguros de viagem.
+                Na certeza de lhe oferecermos organização, responsabilidade, segurança e supervisão dos nossos serviços, nos colocamos à sua disposição para quaisquer dúvidas.
+              </p>
+          </div>
+        <div class="col-lg-6 order-lg-0">
+          <img src="Img/agencia-de-turismo-sp.jpg" alt="" class="img-fluid" />
+      </div>
+      </div>
+  </div>
+</section><br>
+<section id="nosso-time" class="team mb-5 text-center bg-warning">
+  <div class="container">
+      <div class="section-header">
+          <div class="title text-center py-5">
+              <h2 class="position-relative d-inline-block">Nosso Time</h2>
+          </div>
+
+          <p class="text-light bg-dark fst-italic ">
+              "Não é o cargo que se ocupa que importa, e sim o envolvimento e o comprometimento que se tem! - Edelzia Oliveira"
+          </p>
+      </div>
+
+      <div class="row gy-4">
+          <div class="col-xl-3 col-md-6 d-flex">
+              <div class="member">
+                  <img src="Img/nosso time/Eu.jpg" class="img-fluid rounded-circle" alt="" />
+                  <h4>Ana Da Graça</h4>
+                  <span>CEO e Desenvolvedora Web</span>
+                  <div class="social">
+                      <a href="https://twitter.com/carneirinhaaaa?t=eYRcJejB80_yIQYPAqm9RA&s=09"><i class="bi bi-twitter"></i></a>
+                      <a href="https://www.facebook.com/ana.dagracacarneiro?mibextid=ZbWKwL"><i class="bi bi-facebook"></i></a>
+                      <a href="https://instagram.com/carneirinhaa?igshid=NTdlMDg3MTY="><i class="bi bi-instagram"></i></a>
+                      <a href="https://www.linkedin.com/in/ana-paula-da-gra%C3%A7a-carneiro-73a3b51a1"><i class="bi bi-linkedin"></i></a>
+                  </div>
+              </div>
+          </div>
+          <!-- Fim Membro do Time -->
+
+          <div class="col-xl-3 col-md-6 d-flex">
+              <div class="member">
+                  <img src="Img/nosso time/LurdeFasolo.jpg" class="img-fluid rounded-circle" alt="" />
+                  <h4>João Fasolo</h4>
+                  <span>Financeiro</span>
+                  <div class="social">
+                      
+                      <a href="https://www.facebook.com/joao.victorfasolo?mibextid=ZbWKwL"><i class="bi bi-facebook"></i></a>
+                      <a href="https://instagram.com/joaovictorfasolo?igshid=NTdlMDg3MTY="><i class="bi bi-instagram"></i></a>
+                      
+                  </div>
+              </div>
+          </div>
+          <!-- Fim Membro do Time -->
+
+          <div class="col-xl-3 col-md-6 d-flex">
+              <div class="member">
+                  <img src="Img/nosso time/BarciaFasolo.jpg" class="img-fluid rounded-circle" alt="" />
+                  <h4>Emely Fasolo</h4>
+                  <span>Marketing</span>
+                  <div class="social">
+                      
+                      <a href="https://www.facebook.com/profile.php?id=100010562861522&mibextid=ZbWKwL"><i class="bi bi-facebook"></i></a>
+                      <a href="https://instagram.com/emelyfasolo?igshid=NTdlMDg3MTY="><i class="bi bi-instagram"></i></a>
+                     
+                  </div>
+              </div>
+          </div>
+          <!-- Fim Membro do Time -->
+
+          <div class="col-xl-3 col-md-6 d-flex">
+            <div class="member">
+                <img src="Img/nosso time/Rafa.jpg" class="img-fluid rounded-circle" alt="" />
+                <h4>Rafaela Da Graça</h4>
+                <span>Turismólogo</span>
+                <div class="social">
+                    <a href="https://mobile.twitter.com/CristinyGraca"><i class="bi bi-twitter"></i></a>
+                    <a href="https://www.facebook.com/rafaela.dagraca.3?mibextid=ZbWKwL"><i class="bi bi-facebook"></i></a>
+                    <a href="https://instagram.com/rafinha_da_graca13?igshid=NTdlMDg3MTY="><i class="bi bi-instagram"></i></a>
+                    <a href="https://www.linkedin.com/mwlite/in/rafaela-da-gra%C3%A7a-7aa331232"><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- Fim Membro do Time -->
+    </div>
+</div>
+</section>
+<!-- FIM Nosso Time -->
+<footer class="container-fluid bg-dark text-center p-5 fst-italic">
+    <div class="container">
+        <div class="row text-white g-4">
+            <div class="col-md-6 col-lg-3">
+                <a class="text-uppercase text-decoration-none brand text-white" href="index.html">GOOD VOYAGE
+                </a>
+                <p class="text-muted mt-3">
+                  Experimente a alegria de ver o desconhecido!
+                </p>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+                <h5 class="fw-light">Links</h5>
+                <ul class="list-unstyled">
+                    <li class="my-3">
+                        <a href="#header" class="text-white text-decoration-none text-muted">
+                          <i class="bi bi-caret-right-fill"></i> Home
+                        </a>
+                    </li>
+                    <li class="my-3">
+                        <a href="#pacotes" class="text-white text-decoration-none text-muted">
+                          <i class="bi bi-caret-right-fill"></i> Produtos
+                        </a>
+                    </li>
+                    <li class="my-3">
+                        <a href="#quem-somos" class="text-white text-decoration-none text-muted">
+                          <i class="bi bi-caret-right-fill"></i> Quem Somos
+                        </a>
+                    </li>
+                    <li class="my-3">
+                        <a href="#nosso-time" class="text-white text-decoration-none text-muted">
+                          <i class="bi bi-caret-right-fill"></i> Nosso Time
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+                <h5 class="fw-light mb-3">Contato</h5>
+                <div class="d-flex justify-content-start align-items-start my-2 text-muted">
+                    <span class="me-3">
+                      <i class="bi bi-geo-alt-fill"></i>
+                    </span>
+                    <span class="fw-light"> Av. Fredolin Wolf - Pilarzinho, Curitiba - PR, 82115120 </span>
+                </div>
+                <div class="d-flex justify-content-start align-items-start my-2 text-muted">
+                    <span class="me-3">
+                      <i class="bi bi-envelope-at-fill"></i>
+                    </span>
+                    <span class="fw-light"> goodvoyage.suporte@gmail.com </span>
+                </div>
+                <div class="d-flex justify-content-start align-items-start my-2 text-muted">
+                    <span class="me-3">
+                      <i class="bi bi-telephone-fill"></i>
+                    </span>
+                    <span class="fw-light"> +55 41 1234 4567</span>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+                <h5 class="fw-light mb-3">Redes Sociais</h5>
+                <div>
+                    <ul class="list-unstyled d-flex">
+                        <li>
+                            <a
+                                href="https://www.facebook.com/ana.dagracacarneiro?mibextid=ZbWKwL"
+                                class="text-white text-decoration-none text-muted fs-4 me-4"
+                                target="_blank"
+                            >
+                            <i class="bi bi-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="https://twitter.com/carneirinhaaaa?t=eYRcJejB80_yIQYPAqm9RA&s=09"
+                                class="text-white text-decoration-none text-muted fs-4 me-4"
+                                target="_blank"
+                            >
+                            <i class="bi bi-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="https://instagram.com/carneirinhaa?igshid=NTdlMDg3MTY="
+                                class="text-white text-decoration-none text-muted fs-4 me-4"
+                                target="_blank"
+                            >
+                            <i class="bi bi-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="https://www.snapchat.com/add/carneiriinhaa?share_id=gjLpq6J-dkk&locale=pt-BR"
+                                class="text-white text-decoration-none text-muted fs-4 me-4 text-center"
+                                target="_blank"
+                            >
+                            <i class="bi bi-snapchat"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p class="text-info">Desenvolvido por Ana Da Graça</p>
 </footer>
+<!-- end of footer -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" 
     crossorigin="anonymous"></script>
