@@ -11,13 +11,13 @@ header p{
 }
 
 h1{
-    font-size: 63px;
+    font-size: clamp(2em, 2em + 2vw, 1.5em);
     color: #303030;
     text-transform: uppercase;
 }
 
 h2{
-    font-size: 24px;
+    font-size: clamp(2em, 2em + 2vw, 1.5em);
     color: #303030;
     font-weight: 600;
     text-transform: uppercase;
@@ -29,11 +29,30 @@ h2{
     text-shadow: 6px 6px 6px #000000;
 }
 
-.carousel-caption img{
-    height: 800px;
-  
+.carousel-image {
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
+ /* Produtos */
+ .active-filter-btn {
+  background-color: var(--pink) !important;
+  color:  #008080!important;
+  border-color: var(--pink) !important;
+}
+.filter-button-group .btn:hover {
+  color:#008080 !important;
+}
+
+.lista-produtos span {
+  top: -1%;
+  right: 74%;
+  width: 50px;
+  height: 40px;
+  border-radius: 5px;
+}
 
 Nosso Time
     .team .member {
