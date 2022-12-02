@@ -5,6 +5,22 @@
     line-height: 2.2em; 
     color: #818181;
 } */
+.search-btn{
+  color: #00a8ff;
+  float: right;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #353b48;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-txt{
+  border: inset;
+  background-color: #353b48;
+}
 
 header p{
     color: #ffffff;
