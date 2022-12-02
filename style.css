@@ -5,6 +5,30 @@
     line-height: 2.2em; 
     color: #818181;
 } */
+
+container > .clearfix {
+  display: flex;
+  flex-wrap: wrap;
+  display: grid
+}
+
+.card {
+  margin-left: 20px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  flex-direction: clearfix;
+  justify-content: space-around;
+  display: grid
+}
+
+.clearfix{
+  margin-bottom: 10px;
+  height: 50%;
+  padding: 0;
+  display: grid;
+}
+
 .search-btn{
   color: #00a8ff;
   float: right;
@@ -162,22 +186,7 @@ Nosso Time
     border: none;
 }
       
-.search{
-    float:right;
-    margin:7px;
-}
-      
-.search button{
-    background-color: #808080;
-    color: #f2f2f2;
-    float: right;
-    padding: 5px 10px;
-    margin-right: 16px;
-    font-size: 12px;
-    border: none;
-    cursor: pointer;
-    text-align: center;
-} 
+
 
 .payment-info {
     background: blue;
