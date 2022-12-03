@@ -10,7 +10,9 @@
   display: flex;
   justify-content: center;
   height:auto;
-  flex-wrap: nowrap;  
+  flex-wrap: nowrap;
+  min-height: 50%;
+  height: 710px !important;  
 }
 
 .search-btn{
