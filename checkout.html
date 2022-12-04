@@ -13,6 +13,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
     <scrip src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></scrip>
+    <script src="js/cart.js"></script>
     <title>Good Voyage</title>
 </head>
 <body>
@@ -195,35 +196,103 @@
                                 <div class="d-flex flex-row align-items-center"><i class="fa fa-long-arrow-left"></i><span class="ml-2">Continue comprando</span></div>
                                 <hr>
                                 <h6 class="mb-0">Carrinho de compras</h6>
-                                <div class="d-flex justify-content-between"><span>Você tem 4 itens em seu carrinho</span>
+                                <div class="d-flex justify-content-between"><span>Você tem todos os itens em seu carrinho, clique para adicioná-los</span>
                                     <div class="d-flex flex-row align-items-center"><span class="text-black-50">Ordenar por:</span>
                                         <div class="price ml-2"><span class="mr-1">preço</span><i class="fa fa-angle-down"></i></div>
                                     </div>
                                 </div>
-                                <div class="d-flex justify-content-between align-items-center mt-3 p-2 items rounded">
+                                <div id="produto0" class="d-flex justify-content-between align-items-center mt-3 p-2 items rounded">
                                     <div class="d-flex flex-row"><img class="rounded" src="Img/enotel-porto-de-galinhas-pacotes-capa-22.jpg" width="150" height="90">
                                         <div class="ml-2"><span class="font-weight-bold d-block">Porto de Galinhas</span><span class="spec">cidade de Ipojuca - PE</span></div>
                                     </div>
-                                    <div class="d-flex flex-row align-items-center"><span class="d-block">2</span><span class="d-block ml-5 font-weight-bold">R$6.000,00</span><i class="fa fa-trash-o ml-3 text-black-50"></i></div>
-                                </div>
-                                <div class="d-flex justify-content-between align-items-center mt-3 p-2 items rounded">
-                                    <div class="d-flex flex-row"><img class="rounded" src="Img/capa-lencois-930x620.jpg" width="150" height="85">
-                                        <div class="ml-2"><span class="font-weight-bold d-block">Parque Nacional dos Lençóis Maranhenses</span><span class="spec">Barreirinhas - MA</span></div>
+                                    <div class="d-flex flex-row align-items-center">
+                                      <span class="fa fa-minus-square text-secondary" onclick="removerItem(0)"></span>
+                                      <span class="px-md-3 px-1" id="quantidade0">0</span>
+                                      <span class="fa fa-plus-square text-secondary" onclick="adicionarItem(0)"></span>
+                                      <span id="total0" class="d-block ml-5 font-weight-bold">R$6.000,00</span><i class="fa fa-trash-o ml-3 text-black-50"></i>
                                     </div>
-                                    <div class="d-flex flex-row align-items-center"><span class="d-block">1</span><span class="d-block ml-5 font-weight-bold">R$4.000,00</span><i class="fa fa-trash-o ml-3 text-black-50"></i></div>
                                 </div>
-                                <div class="d-flex justify-content-between align-items-center mt-3 p-2 items rounded">
-                                    <div class="d-flex flex-row"><img class="rounded" src="Img/Bombinhas-Santa-Catarina.jpg" width="150" height="85">
-                                        <div class="ml-2"><span class="font-weight-bold d-block">Bombinhas</span><span class="spec">Bombinhas - SC</span></div>
+                                <div id="produto1" class="d-flex justify-content-between align-items-center mt-3 p-2 items rounded">
+                                    <div class="d-flex flex-row"><img class="rounded" src="Img/-gramado-.jpg" width="150" height="85">
+                                        <div class="ml-2"><span class="font-weight-bold d-block">Gramado</span><span class="spec">Gramado - RS</span></div>
                                     </div>
-                                    <div class="d-flex flex-row align-items-center"><span class="d-block">1</span><span class="d-block ml-5 font-weight-bold">R$2.000,00</span><i class="fa fa-trash-o ml-3 text-black-50"></i></div>
+                                    <div class="d-flex flex-row align-items-center">
+                                      <span class="fa fa-minus-square text-secondary" onclick="removerItem(1)"></span>
+                                      <span class="px-md-3 px-1" id="quantidade1">0</span>
+                                      <span class="fa fa-plus-square text-secondary" onclick="adicionarItem(1)"></span>
+                                      <span id="total1" class="d-block ml-5 font-weight-bold">R$4.000,00</span><i class="fa fa-trash-o ml-3 text-black-50"></i></div>
                                 </div>
-                                <div class="d-flex justify-content-between align-items-center mt-3 p-2 items rounded">
-                                    <div class="d-flex flex-row"><img class="rounded" src="Img/sao_miguel_do_gostoso-10070977.jpeg" width="150" height="85">
-                                        <div class="ml-2"><span class="font-weight-bold d-block">São Miguel do Gostoso</span><span class="spec">Polo Costa das Dunas - RN</span></div>
+                                <div id="produto2" class="d-flex justify-content-between align-items-center mt-3 p-2 items rounded">
+                                    <div class="d-flex flex-row"><img class="rounded" src="Img/rio-de-janeiro.jpg" width="150" height="85">
+                                        <div class="ml-2"><span class="font-weight-bold d-block">Rio de Janeiro</span><span class="spec">Rio de Janeiro - RJ</span>
+                                        </div>
                                     </div>
-                                    <div class="d-flex flex-row align-items-center"><span class="d-block">1</span><span class="d-block ml-5 font-weight-bold">R$3.000,00</span><i class="fa fa-trash-o ml-3 text-black-50"></i></div>
+                                    <div class="d-flex flex-row align-items-center">
+                                      <span class="fa fa-minus-square text-secondary" onclick="removerItem(2)"></span>
+                                      <span class="px-md-3 px-1" id="quantidade2">0</span>
+                                      <span class="fa fa-plus-square text-secondary" onclick="adicionarItem(2)"></span>
+                                      <span id="total2" class="d-block ml-5 font-weight-bold">R$3.000,00</span><i class="fa fa-trash-o ml-3 text-black-50"></i></div>
                                 </div>
+                                <div id="produto3" class="d-flex justify-content-between align-items-center mt-3 p-2 items rounded">
+                                    <div class="d-flex flex-row"><img class="rounded" src="Img/jalapao1.jpg" width="150" height="85">
+                                        <div class="ml-2"><span class="font-weight-bold d-block">Jalapão</span><span class="spec">Jalapão - TO</span></div>
+                                    </div>
+                                    <div class="d-flex flex-row align-items-center">
+                                      <span class="fa fa-minus-square text-secondary" onclick="removerItem(3)"></span>
+                                      <span class="px-md-3 px-1" id="quantidade3">0</span>
+                                      <span class="fa fa-plus-square text-secondary" onclick="adicionarItem(3)"></span>
+                                      <span id="total3" class="d-block ml-5 font-weight-bold">R$3.000,00</span><i class="fa fa-trash-o ml-3 text-black-50"></i></div>
+                                </div>
+                                <div id="produto4" class="d-flex justify-content-between align-items-center mt-3 p-2 items rounded">
+                                  <div class="d-flex flex-row"><img class="rounded" src="Img/Parque Chapada dos Veadeiros.jpg" width="150" height="85">
+                                      <div class="ml-2"><span class="font-weight-bold d-block">Parque Chapada dos Veadeiros</span><span class="spec">Parque nacional -GO</span></div>
+                                  </div>
+                                  <div class="d-flex flex-row align-items-center">
+                                    <span class="fa fa-minus-square text-secondary" onclick="removerItem(4)"></span>
+                                    <span class="px-md-3 px-1" id="quantidade4">0</span>
+                                    <span class="fa fa-plus-square text-secondary" onclick="adicionarItem(4)"></span>
+                                    <span id="total4" class="d-block ml-5 font-weight-bold">R$4.000,00</span><i class="fa fa-trash-o ml-3 text-black-50"></i></div>
+                              </div>
+                              <div id="produto5" class="d-flex justify-content-between align-items-center mt-3 p-2 items rounded">
+                                <div class="d-flex flex-row"><img class="rounded" src="Img/Fernando-de-Noronha-Dicas-O-que-Fazer-Capa.jpg" width="150" height="85">
+                                    <div class="ml-2"><span class="font-weight-bold d-block">Fernando de Noronha</span><span class="spec">Fernando de Noronha - PE</span></div>
+                                </div>
+                                <div class="d-flex flex-row align-items-center">
+                                  <span class="fa fa-minus-square text-secondary" onclick="removerItem(5)"></span>
+                                  <span class="px-md-3 px-1" id="quantidade5">0</span>
+                                  <span class="fa fa-plus-square text-secondary" onclick="adicionarItem(5)"></span>
+                                  <span id="total5" class="d-block ml-5 font-weight-bold">R$6.000,00</span><i class="fa fa-trash-o ml-3 text-black-50"></i></div>
+                            </div>
+                            <div id="produto6" class="d-flex justify-content-between align-items-center mt-3 p-2 items rounded">
+                              <div class="d-flex flex-row"><img class="rounded" src="Img/Bombinhas-Santa-Catarina.jpg" width="150" height="85">
+                                  <div class="ml-2"><span class="font-weight-bold d-block">Bombinhas</span><span class="spec">Bombinhas - SC</span></div>
+                              </div>
+                              <div class="d-flex flex-row align-items-center">
+                                <span class="fa fa-minus-square text-secondary" onclick="removerItem(6)"></span>
+                                <span class="px-md-3 px-1" id="quantidade6">0</span>
+                                <span class="fa fa-plus-square text-secondary" onclick="adicionarItem(6)"></span>
+                                <span id="total6" class="d-block ml-5 font-weight-bold">R$2.000,00</span><i class="fa fa-trash-o ml-3 text-black-50"></i></div>
+                          </div>
+                          <div id="produto7" class="d-flex justify-content-between align-items-center mt-3 p-2 items rounded">
+                            <div class="d-flex flex-row"><img class="rounded" src="Img/capa-lencois-930x620.jpg" width="150" height="85">
+                                <div class="ml-2"><span class="font-weight-bold d-block">Parque dos Lençóis Maranhenses</span><span class="spec">Barreirinhas - MA</span></div>
+                            </div>
+                            <div class="d-flex flex-row align-items-center">
+                              <span class="fa fa-minus-square text-secondary" onclick="removerItem(7)"></span>
+                              <span class="px-md-3 px-1" id="quantidade7">0</span>
+                              <span class="fa fa-plus-square text-secondary" onclick="adicionarItem(7)"></span>
+                              <span id="total7" class="d-block ml-5 font-weight-bold">R$4.000,00</span><i class="fa fa-trash-o ml-3 text-black-50"></i></div>
+                        </div>
+                        <div id="produto8" class="d-flex justify-content-between align-items-center mt-3 p-2 items rounded">
+                          <div class="d-flex flex-row"><img class="rounded" src="Img/sao_miguel_do_gostoso-10070977.jpeg" width="150" height="85">
+                              <div class="ml-2"><span class="font-weight-bold d-block">São Miguel do Gostoso</span><span class="spec">Polo Costa das Dunas - RN</span></div>
+                          </div>
+                          <div class="d-flex flex-row align-items-center">
+                            <span class="fa fa-minus-square text-secondary" onclick="removerItem(8)"></span>
+                            <span class="px-md-3 px-1" id="quantidade8">0</span>
+                            <span class="fa fa-plus-square text-secondary" onclick="adicionarItem(8)"></span>
+                            <span id="total8" class="d-block ml-5 font-weight-bold">R$3.000,00</span><i class="fa fa-trash-o ml-3 text-black-50"></i></div>
+                      </div>
                             </div>
                         </div>
                         <div class="col-md-4">
@@ -243,14 +312,13 @@
                                     <div class="col-md-6"><label class="credit-card-label">CVV</label><input type="text" class="form-control credit-inputs" placeholder="342"></div>
                                 </div>
                                 <hr class="line">
-                                <div class="d-flex justify-content-between information"><span>Subtotal</span><span>$3000.00</span></div>
-                                <div class="d-flex justify-content-between information"><span>Total (incluindo impostos)</span><span>$3020.00</span></div><button class="btn btn-primary btn-block d-flex justify-content-between mt-3" type="button"><span>$3020.00</span><span>Confira<i class="fa fa-long-arrow-right ml-1"></i></span></button></div>
+                                <div class="d-flex justify-content-between information"><span>Subtotal R$</span><span id="valorTotalCompra"></span></div>
+                                <div class="d-flex justify-content-between information"><span>Total (incluindo impostos)</span><span></span></div>
+                                <button class="btn btn-primary btn-block d-flex justify-content-between mt-3" type="submit"><span>R$</span><span id="valorTotalCompra">Confira<i class="fa fa-long-arrow-right ml-1"></i></span></button></div>
                         </div>
                     </div>
                 </div>
                   
-                  <hr class="my-4">
-        
                   <button class="w-100 btn btn-primary btn-lg" type="submit">Continuar para finalizar a compra.</button>
                 </form>
               </div>
